@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="calculadora.css">
+</head>
+<div class="container">
+  <h1>CALCULADORA JUAN CORREA</h1>
+  <div class="calculadora">
+    <input type="text" id="pantalla" value="" readonly>
+    <div class="cuadrocalcu">
+        <div class="primerabarra">
+          <div class="siete" style="width: 25%;">
+            <button onclick="numeros(7)">7</button>
+          </div> 
+          <div class="ocho" style="width: 25%;">
+            <button onclick="numeros(8)">8</button>
+          </div>
+          <div class="nueve" style="width: 25%;">
+            <button onclick="numeros(9)">9</button>
+          </div>
+          <div class="suma" style="width: 25%;">
+            <button id="suma" onclick="numeros('+')">+</button>
+          </div>
+        </div>
+        <div class="segundabarra">
+          <div class="cuatro" style="width: 25%;">
+            <button onclick="numeros(4)">4</button>
+          </div>
+          <div class="cinco" style="width: 25%;">
+            <button onclick="numeros(5)">5</button>
+          </div>
+          <div class="seis" style="width: 25%;">
+            <button onclick="numeros(6)">6</button>
+          </div>
+          <div class="resta" style="width: 25%;">
+            <button id="resta" onclick="numeros('-')">-</button>
+          </div>
+        </div>
+        <div class="tercerabarra">
+          <div class="uno" style="width: 25%;">
+            <button onclick="numeros(1)">1</button>
+          </div>
+          <div class="dos" style="width: 25%;">
+            <button onclick="numeros(2)">2</button>
+          </div>
+          <div class="tres" style="width: 25%;">
+            <button onclick="numeros(3)">3</button>
+          </div>
+          <div class="multiplicacion" style="width: 25%;">
+            <button id="multiplicacion"  onclick="numeros('*')">*</button>
+          </div>
+        </div>
+        <div class="cuartabarra">
+          <div class="cero" style="width: 25%;">
+            <button onclick="numeros(0)">0</button>
+          </div>
+          <div class="punto" style="width: 25%;">
+            <button onclick="resultado()">=</button>
+          </div>
+          <div class="borrar" style="width: 25%;">
+            <button onclick="borr()">C</button>
+          </div>
+          <div class="division" style="width: 25%;">
+            <button id="division" onclick="numeros('/')">/</button>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<body>
+  <script src="calculadora.js"></script>
+</body>
+</html>
